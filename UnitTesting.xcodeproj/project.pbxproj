@@ -12,7 +12,13 @@
 		62B4D0E621CC47DC00A36C01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B4D0E421CC47DC00A36C01 /* Main.storyboard */; };
 		62B4D0E821CC47DD00A36C01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B4D0E721CC47DD00A36C01 /* Assets.xcassets */; };
 		62B4D0EB21CC47DD00A36C01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B4D0E921CC47DD00A36C01 /* LaunchScreen.storyboard */; };
-		62B4D0F621CC47DD00A36C01 /* UnitTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B4D0F521CC47DD00A36C01 /* UnitTestingTests.swift */; };
+		62B4D0F621CC47DD00A36C01 /* CountryChangeUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B4D0F521CC47DD00A36C01 /* CountryChangeUseCaseTests.swift */; };
+		62B4D10221CC490100A36C01 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B4D10121CC490100A36C01 /* Country.swift */; };
+		62B4D10421CC491700A36C01 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B4D10321CC491700A36C01 /* Currency.swift */; };
+		62B4D10821CC498900A36C01 /* CountryChangeUseCaseContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B4D10721CC498900A36C01 /* CountryChangeUseCaseContracts.swift */; };
+		62B4D10A21CC4A2000A36C01 /* CountryChangeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B4D10921CC4A2000A36C01 /* CountryChangeUseCase.swift */; };
+		62B4D10D21CC58C500A36C01 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B4D10C21CC58C500A36C01 /* Helpers.swift */; };
+		62B4D10F21CC5AE800A36C01 /* CurrencyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B4D10E21CC5AE800A36C01 /* CurrencyPair.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +40,14 @@
 		62B4D0EA21CC47DD00A36C01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62B4D0EC21CC47DD00A36C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62B4D0F121CC47DD00A36C01 /* UnitTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		62B4D0F521CC47DD00A36C01 /* UnitTestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingTests.swift; sourceTree = "<group>"; };
+		62B4D0F521CC47DD00A36C01 /* CountryChangeUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryChangeUseCaseTests.swift; sourceTree = "<group>"; };
 		62B4D0F721CC47DD00A36C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62B4D10121CC490100A36C01 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		62B4D10321CC491700A36C01 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		62B4D10721CC498900A36C01 /* CountryChangeUseCaseContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryChangeUseCaseContracts.swift; sourceTree = "<group>"; };
+		62B4D10921CC4A2000A36C01 /* CountryChangeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryChangeUseCase.swift; sourceTree = "<group>"; };
+		62B4D10C21CC58C500A36C01 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		62B4D10E21CC5AE800A36C01 /* CurrencyPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPair.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,8 @@
 		62B4D0DF21CC47DC00A36C01 /* UnitTesting */ = {
 			isa = PBXGroup;
 			children = (
+				62B4D10021CC48F300A36C01 /* DataModels */,
+				62B4D10621CC492E00A36C01 /* UseCases */,
 				62B4D0E021CC47DC00A36C01 /* AppDelegate.swift */,
 				62B4D0E221CC47DC00A36C01 /* ViewController.swift */,
 				62B4D0E421CC47DC00A36C01 /* Main.storyboard */,
@@ -90,10 +104,30 @@
 		62B4D0F421CC47DD00A36C01 /* UnitTestingTests */ = {
 			isa = PBXGroup;
 			children = (
-				62B4D0F521CC47DD00A36C01 /* UnitTestingTests.swift */,
+				62B4D0F521CC47DD00A36C01 /* CountryChangeUseCaseTests.swift */,
 				62B4D0F721CC47DD00A36C01 /* Info.plist */,
 			);
 			path = UnitTestingTests;
+			sourceTree = "<group>";
+		};
+		62B4D10021CC48F300A36C01 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				62B4D10121CC490100A36C01 /* Country.swift */,
+				62B4D10321CC491700A36C01 /* Currency.swift */,
+				62B4D10E21CC5AE800A36C01 /* CurrencyPair.swift */,
+				62B4D10C21CC58C500A36C01 /* Helpers.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		62B4D10621CC492E00A36C01 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				62B4D10721CC498900A36C01 /* CountryChangeUseCaseContracts.swift */,
+				62B4D10921CC4A2000A36C01 /* CountryChangeUseCase.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +231,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62B4D10A21CC4A2000A36C01 /* CountryChangeUseCase.swift in Sources */,
+				62B4D10D21CC58C500A36C01 /* Helpers.swift in Sources */,
+				62B4D10421CC491700A36C01 /* Currency.swift in Sources */,
 				62B4D0E321CC47DC00A36C01 /* ViewController.swift in Sources */,
+				62B4D10F21CC5AE800A36C01 /* CurrencyPair.swift in Sources */,
+				62B4D10221CC490100A36C01 /* Country.swift in Sources */,
+				62B4D10821CC498900A36C01 /* CountryChangeUseCaseContracts.swift in Sources */,
 				62B4D0E121CC47DC00A36C01 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,7 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62B4D0F621CC47DD00A36C01 /* UnitTestingTests.swift in Sources */,
+				62B4D0F621CC47DD00A36C01 /* CountryChangeUseCaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
